@@ -5,7 +5,7 @@ function UsersPage(){
     const handleChange = (event)=>{
         const name = event.target.name
         const value = event.target.value;
-        setInputs(values => ({...inputs,[name]:value}))
+        setInputs(() => ({...inputs,[name]:value}))
     }
     const handleSummit = (event)=> {
         event.preventDefault();
